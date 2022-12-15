@@ -1,4 +1,18 @@
 
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+input:focus {outline: none;}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .navbar-content {
     display: flex;
     font-size: 25px;
@@ -23,10 +37,39 @@
     border: none;
     border-radius: 10px;
     background-color: white;
-    padding: 0 15px 0 0;
 }
 
-input {
+.btn2-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    background: #ccc;
+}
+
+.btn2-open {
+    display: block;
+}
+
+.ch1 {
+    background: gray;
+    border-radius: 5px;
+}
+
+.ch2 {
+    background: green;
+    border-radius: 5px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
     width: 950px;
     height: 30px;
     padding: 10px;
@@ -44,4 +87,9 @@ input {
 
 .navbar-icon {
     padding: 5px 10px 10px;
+}
+
+.container {
+    padding: 100px 0 0 150px;
+    display: flex;
 }
